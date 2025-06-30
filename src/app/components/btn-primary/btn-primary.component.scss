@@ -1,10 +1,11 @@
-@use "../../../styles.scss";
+@use "../../../styles.scss" as *;
 
 .btn {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 40px;
+    font-weight: bold;
 
     &:disabled {
         opacity: 0.6;
@@ -15,7 +16,6 @@
         background: -webkit-linear-gradient(180deg, $primary-color, $secundary-color);
 
         font-size: 24px;
-        font-weight: bold;
     }
 
     &.secundary {
@@ -23,6 +23,5 @@
         background: white;
 
         font-size: 16px;
-        font-weight: bold;
     }
 }
