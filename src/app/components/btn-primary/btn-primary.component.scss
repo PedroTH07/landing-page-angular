@@ -1,0 +1,28 @@
+@use "../../../styles.scss";
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 20px;
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &.primary {
+        color: white;
+        background: -webkit-linear-gradient(180deg, $primary-color, $secundary-color);
+
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &.secundary {
+        color: $primary-text;
+        background: white;
+
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
