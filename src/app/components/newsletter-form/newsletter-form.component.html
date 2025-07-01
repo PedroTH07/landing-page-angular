@@ -4,11 +4,18 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ut numquam repellat, debitis voluptatibus corrupti doloribus, cupiditate voluptas nulla aliquid, dolorum neque quam recusandae. Quo ex quibusdam laboriosam nemo earum.</p>
     </div>
 
-    <form>
+    <form [formGroup]="newsletterForms">
         <label for="name">Name</label>
-        <input id="name"/>
+        <input id="name" formControlName="name"/>
         <label for="email">Email</label>
-        <input id="email"/>
-        <btn-primary btn-text="se inscreva" variant="secondary"></btn-primary>
+        <input id="email" formControlName="email"/>
+
+        <btn-primary
+            btn-text="se inscreva"
+            variant="secondary"
+            (submit)="onSubmit()"
+            [disabled]="!newsletterForms.valid"
+            [loading]="loading()"
+        ></btn-primary>
     </form>
 </section>

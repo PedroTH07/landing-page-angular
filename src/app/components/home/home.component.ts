@@ -12,7 +12,4 @@ import { NewsletterFormComponent } from '../newsletter-form/newsletter-form.comp
 })
 export class HomeComponent {
 
-  log(a: string): void {
-    console.log(a);
-  }
 }
