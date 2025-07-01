@@ -1,4 +1,44 @@
-# LandingPage
+# Landing Page com Angular
+
+Esse é um projeto de uma landing page feita com angular usando SSR (Server-Side Rendering) e SCSS, o projeto além de dividido em componentes, também se comunica com um backend de testes via POST a partir de um service da aplicação.
+
+O projeto é simples, mas me ensinou muitas coisas do angular, assim como o vídeo que eu usei de base para a contrução desse projeto, o vídeo é da [Fernanda Kipper](https://github.com/Fernanda-Kipper), caso tenha vontade de aprender sobre angular recomendo muito a playlist dela sobre o framework.
+
+## 🚀 Como rodar o projeto
+
+### 📦 Pré-requisitos
+
+- Node.js versão ^18.13.0 (versão mínima)
+- Angular CLI instalado globalmente ^19.2.0
+```bash
+npm install -g @angular/cli
+```
+### 🛠️ Instalação
+
+1. Clone o repositório na sua máquina
+```bash
+git clone https://github.com/PedroTH07/landing-page-angular.git
+```
+2. Instale as dependências do projeto
+```bash
+npm install
+```
+
+### ▶️ Rodando o projeto
+
+```bash
+npm run start
+```
+
+ou
+
+```bash
+ng serve
+```
+
+e acesse [http://localhos:4200/](http://localhost:4200) no seu navegador
+
+## Readme gerado pelo angular 🅰️
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
 
