@@ -4,7 +4,7 @@ Esse é um projeto de uma landing page feita com angular usando SSR (Server-Side
 
 O projeto é simples, mas me ensinou muitas coisas do angular, assim como o vídeo que eu usei de base para a contrução desse projeto, o vídeo é da [Fernanda Kipper](https://github.com/Fernanda-Kipper), caso tenha vontade de aprender sobre angular recomendo muito a playlist dela sobre o framework.
 
-## 🚀 Como rodar o projeto
+## 🚀 Como rodar o projeto (com node)
 
 ### 📦 Pré-requisitos
 
@@ -18,6 +18,7 @@ npm install -g @angular/cli
 1. Clone o repositório na sua máquina
 ```bash
 git clone https://github.com/PedroTH07/landing-page-angular.git
+cd landing-page-angular
 ```
 2. Instale as dependências do projeto
 ```bash
@@ -34,6 +35,30 @@ ou
 
 ```bash
 ng serve
+```
+
+## 🚀 Como rodar o projeto (com docker)
+
+### 📦 pré-requisitos
+
+- Docker
+
+### 🛠️ Build do projeto
+
+1. Clone o repositório na sua máquina
+```bash
+git clone https://github.com/PedroTH07/landing-page-angular.git
+cd landing-page-angular
+```
+2. Build o container
+```bash
+docker build -t landing-page .
+```
+
+### ▶️ Rodando o projeto
+
+```bash
+docker run -p 4200:4200 landing-page
 ```
 
 e acesse [http://localhos:4200/](http://localhost:4200) no seu navegador
